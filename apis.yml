@@ -1,7 +1,16 @@
 aid: ciitizen
 name: Ciitizen
-description: Ciitizen is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ciitizen is a digital health company that helps patients collect, organize,
+  and control their own medical records. Founded by Anil Sethi and backed by
+  a16z, Ciitizen built patient-directed tools for aggregating records across
+  providers under HIPAA right-of-access, originally with a focus on cancer
+  patients. The team and technology now operate as Citizen Health
+  (citizen.health), which turns a patient's medical records into instant answers
+  through an AI Advocate built for rare disease patients and caregivers and used
+  by 100+ patient advocacy groups. Ciitizen exposes no public developer API,
+  developer portal, or machine-readable API artifacts at this time; this profile
+  captures the company identity and its live web presence.
 url: https://raw.githubusercontent.com/api-evangelist/ciitizen/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +18,44 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand: Citizen Health (citizen.health)
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://cdn.prod.website-files.com/6658cacd8ca3f5b6f07af2d5/699d46365751cf062e71736e_Open%20Graph%20with%20Phone%20and%20Recording.png
 tags:
 - Company
+- Healthcare
+- Health Records
+- Patient Data
+- Rare Disease
+- Digital Health
+- Interoperability
+- Artificial Intelligence
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ciitizen-domain-security.yml
+- type: Website
+  url: https://www.citizen.health/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
